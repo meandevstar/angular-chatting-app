@@ -1,0 +1,14 @@
+<div class="login-register-page">
+  <form>
+    <input type="name" placeholder="Name" name="name" />
+    <span class="error">{{ nameError }}</span>
+    <input type="email" placeholder="Email" name="email" />
+    <span class="error">{{ emailError }}</span>
+    <input type="password" placeholder="Password" name="password" />
+    <span class="error">{{ passwordError }}</span>
+    <input type="confirmPass" placeholder="Confirm Password" name="confirmPass" />
+    <span class="error">{{ confirmPassError }}</span>
+    <button (click)="signup()">sign up</button>
+    <p className="message">Already have an account? <a routerLink="['/login']">Log in</a></p>
+  </form>
+</div>

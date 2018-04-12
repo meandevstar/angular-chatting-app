@@ -1,0 +1,10 @@
+<div class="login-register-page">
+  <form>
+    <input type="email" placeholder="Email" name="email" [(ngModel)]="email"/>
+    <span class="error">{{ emailError }}</span>
+    <input type="password" placeholder="Password" name="password" [(ngModel)]="password"/>
+    <span class="error">{{ passwordError }}</span>
+    <button (click)="login()">login</button>
+    <p className="message">Not registered? <a [routerLink]="['/signup']">Create an account</a></p>
+  </form>
+</div>
